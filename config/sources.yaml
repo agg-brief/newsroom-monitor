@@ -6,39 +6,47 @@ categories:
   - Media & Journalists
   - Additional Regional
 
-# RSS is used for X accounts through public RSS mirrors/services.
-# Replace placeholder URLs with confirmed public feeds before collection.
+# Public RSS feeds only. X does not provide an official RSS API; named X accounts
+# require a confirmed public RSS mirror URL before they can be added safely.
+# Replace or extend this file without changing application code.
 sources:
-  - {name: IsraeliPM, category: Israeli Government, platform: rss, url: https://example.invalid/rss/israelipm, language: en}
-  - {name: Netanyahu, category: Israeli Government, platform: rss, url: https://example.invalid/rss/netanyahu, language: en}
-  - {name: Israel_katz, category: Israeli Government, platform: rss, url: https://example.invalid/rss/israel_katz, language: en}
-  - {name: gantzbe, category: Israeli Government, platform: rss, url: https://example.invalid/rss/gantzbe, language: he}
-  - {name: yairlapid, category: Israeli Government, platform: rss, url: https://example.invalid/rss/yairlapid, language: he}
-  - {name: itamarbengvir, category: Israeli Government, platform: rss, url: https://example.invalid/rss/itamarbengvir, language: he}
-  - {name: bezalelsm, category: Israeli Government, platform: rss, url: https://example.invalid/rss/bezalelsm, language: he}
-  - {name: IDF, category: Israeli Security, platform: rss, url: https://example.invalid/rss/idf, language: en}
-  - {name: cogatonline, category: Israeli Security, platform: rss, url: https://example.invalid/rss/cogatonline, language: en}
-  - {name: IsraelPolice, category: Israeli Security, platform: rss, url: https://example.invalid/rss/israelpolice, language: he}
-  - {name: MagenDavidAdom, category: Israeli Security, platform: rss, url: https://example.invalid/rss/mda, language: he}
-  - {name: IDF Telegram, category: Israeli Security, platform: telegram, channel: idf_telegram_placeholder, language: en}
-  - {name: COGAT Telegram, category: Israeli Security, platform: telegram, channel: cogat_placeholder, language: en}
-  - {name: Palestine_UN, category: Palestinian Authority, platform: rss, url: https://example.invalid/rss/palestine_un, language: en}
-  - {name: PMoPS, category: Palestinian Authority, platform: rss, url: https://example.invalid/rss/pmops, language: ar}
-  - {name: WAFA Telegram, category: Palestinian Authority, platform: telegram, channel: wafa_placeholder, language: ar}
-  - {name: Palestinian PM Telegram, category: Palestinian Authority, platform: telegram, channel: palestinian_pm_placeholder, language: ar}
-  - {name: Hamas Telegram, category: Palestinian Factions, platform: telegram, channel: hamas_placeholder, language: ar}
-  - {name: Hamas spokesperson Telegram, category: Palestinian Factions, platform: telegram, channel: hamas_spokesperson_placeholder, language: ar}
-  - {name: Al Qassam Brigades Telegram, category: Palestinian Factions, platform: telegram, channel: qassam_placeholder, language: ar}
-  - {name: Palestinian Islamic Jihad Telegram, category: Palestinian Factions, platform: telegram, channel: pij_placeholder, language: ar}
-  - {name: Saraya al Quds Telegram, category: Palestinian Factions, platform: telegram, channel: saraya_placeholder, language: ar}
-  - {name: Quds News Telegram, category: Palestinian Factions, platform: telegram, channel: qudsnews_placeholder, language: ar}
-  - {name: Shehab Telegram, category: Palestinian Factions, platform: telegram, channel: shehab_placeholder, language: ar}
-  - {name: ynetalerts, category: Media & Journalists, platform: rss, url: https://example.invalid/rss/ynetalerts, language: he}
-  - {name: N12News, category: Media & Journalists, platform: rss, url: https://example.invalid/rss/n12news, language: he}
-  - {name: kann_news, category: Media & Journalists, platform: rss, url: https://example.invalid/rss/kann_news, language: he}
-  - {name: BarakRavid, category: Media & Journalists, platform: rss, url: https://example.invalid/rss/barakravid, language: en}
-  - {name: Hezbollah, category: Additional Regional, platform: telegram, channel: hezbollah_placeholder, language: ar}
-  - {name: Lebanese Presidency, category: Additional Regional, platform: rss, url: https://example.invalid/rss/lebanese_presidency, language: ar}
-  - {name: Lebanese PM, category: Additional Regional, platform: rss, url: https://example.invalid/rss/lebanese_pm, language: ar}
-  - {name: Iranian Foreign Ministry, category: Additional Regional, platform: rss, url: https://example.invalid/rss/iranian_fm, language: en}
-  - {name: IRGC related channels, category: Additional Regional, platform: telegram, channel: irgc_placeholder, language: fa}
+  # Israeli government / official statements
+  - {name: Israel MFA, category: Israeli Government, platform: rss, url: https://mfa.gov.il/MFA/AboutIsrael/Pages/rss.aspx, language: en}
+
+  # Israeli security and emergency reporting
+  - {name: Jerusalem Post Conflict, category: Israeli Security, platform: rss, url: https://www.jpost.com/rss/rssfeedsarabisraeliconflict.aspx, language: en}
+  - {name: Jerusalem Post Gaza, category: Israeli Security, platform: rss, url: https://www.jpost.com/rss/rssfeedsgaza.aspx, language: en}
+
+  # Palestinian Authority / official Palestinian reporting
+  - {name: WAFA English, category: Palestinian Authority, platform: rss, url: http://english.wafa.ps/rss.aspx, language: en}
+  - {name: WAFA Arabic, category: Palestinian Authority, platform: rss, url: http://www.wafa.ps/ar/rss.aspx, language: ar}
+  - {name: UN News Middle East, category: Palestinian Authority, platform: rss, url: https://news.un.org/feed/subscribe/en/news/region/middle-east/feed/rss.xml, language: en}
+
+  # Faction-related and conflict reporting. These are news feeds, not official faction channels.
+  - {name: Al Jazeera Middle East, category: Palestinian Factions, platform: rss, url: https://www.aljazeera.com/xml/rss/all.xml, language: en}
+  - {name: Times of Israel, category: Palestinian Factions, platform: rss, url: https://www.timesofisrael.com/feed/, language: en}
+
+  # Media and journalists
+  - {name: Jerusalem Post Headlines, category: Media & Journalists, platform: rss, url: https://www.jpost.com/rss/rssfeedsheadlines.aspx, language: en}
+  - {name: i24NEWS, category: Media & Journalists, platform: rss, url: https://www.i24news.tv/en/rss, language: en}
+  - {name: Haaretz Israel News, category: Media & Journalists, platform: rss, url: https://www.haaretz.com/cmlink/1.5153477, language: en}
+  - {name: Reuters Middle East, category: Media & Journalists, platform: rss, url: https://www.reutersagency.com/feed/?best-topics=middle-east, language: en}
+
+  # Lebanon and regional developments
+  - {name: L'Orient Today, category: Additional Regional, platform: rss, url: https://today.lorientlejour.com/rss/, language: en}
+  - {name: Naharnet, category: Additional Regional, platform: rss, url: https://www.naharnet.com/stories/en/rss, language: en}
+  - {name: Al Jazeera Middle East Regional, category: Additional Regional, platform: rss, url: https://www.aljazeera.com/xml/rss/all.xml, language: en}
+
+  # Add confirmed public RSS mirrors for these X accounts when available:
+  # IsraeliPM, Netanyahu, Israel_katz, gantzbe, yairlapid, itamarbengvir,
+  # bezalelsm, IDF, cogatonline, IsraelPolice, MagenDavidAdom, Palestine_UN,
+  # PMoPS, ynetalerts, N12News, kann_news, BarakRavid.
+
+  # Add confirmed public Telegram usernames below. Placeholder channels are
+  # intentionally omitted so collection does not try to resolve fake entities.
+  # - {name: IDF Telegram, category: Israeli Security, platform: telegram, channel: confirmed_username, language: en}
+  # - {name: COGAT Telegram, category: Israeli Security, platform: telegram, channel: confirmed_username, language: en}
+  # - {name: WAFA Telegram, category: Palestinian Authority, platform: telegram, channel: confirmed_username, language: ar}
+  # - {name: Palestinian PM Telegram, category: Palestinian Authority, platform: telegram, channel: confirmed_username, language: ar}
+  # - {name: Hezbollah, category: Additional Regional, platform: telegram, channel: confirmed_username, language: ar}
+  # - {name: IRGC related channel, category: Additional Regional, platform: telegram, channel: confirmed_username, language: fa}
