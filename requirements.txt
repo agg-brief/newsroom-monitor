@@ -1,0 +1,5 @@
+streamlit>=1.37,<2
+streamlit-autorefresh>=1.0.1,<2
+feedparser>=6.0,<7
+Telethon>=1.36,<2
+python-dotenv>=1.0,<2
