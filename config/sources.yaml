@@ -11,31 +11,31 @@ categories:
 # Replace or extend this file without changing application code.
 sources:
   # Israeli government / official statements
-  - {name: Israel MFA, category: Israeli Government, platform: rss, url: https://mfa.gov.il/MFA/AboutIsrael/Pages/rss.aspx, language: en}
+  - {name: "Israel MFA", category: "Israeli Government", platform: rss, url: "https://mfa.gov.il/MFA/AboutIsrael/Pages/rss.aspx", language: en}
 
   # Israeli security and emergency reporting
-  - {name: Jerusalem Post Conflict, category: Israeli Security, platform: rss, url: https://www.jpost.com/rss/rssfeedsarabisraeliconflict.aspx, language: en}
-  - {name: Jerusalem Post Gaza, category: Israeli Security, platform: rss, url: https://www.jpost.com/rss/rssfeedsgaza.aspx, language: en}
+  - {name: "Jerusalem Post Conflict", category: "Israeli Security", platform: rss, url: "https://www.jpost.com/rss/rssfeedsarabisraeliconflict.aspx", language: en}
+  - {name: "Jerusalem Post Gaza", category: "Israeli Security", platform: rss, url: "https://www.jpost.com/rss/rssfeedsgaza.aspx", language: en}
 
   # Palestinian Authority / official Palestinian reporting
-  - {name: WAFA English, category: Palestinian Authority, platform: rss, url: http://english.wafa.ps/rss.aspx, language: en}
-  - {name: WAFA Arabic, category: Palestinian Authority, platform: rss, url: http://www.wafa.ps/ar/rss.aspx, language: ar}
-  - {name: UN News Middle East, category: Palestinian Authority, platform: rss, url: https://news.un.org/feed/subscribe/en/news/region/middle-east/feed/rss.xml, language: en}
+  - {name: "WAFA English", category: "Palestinian Authority", platform: rss, url: "http://english.wafa.ps/rss.aspx", language: en}
+  - {name: "WAFA Arabic", category: "Palestinian Authority", platform: rss, url: "http://www.wafa.ps/ar/rss.aspx", language: ar}
+  - {name: "UN News Middle East", category: "Palestinian Authority", platform: rss, url: "https://news.un.org/feed/subscribe/en/news/region/middle-east/feed/rss.xml", language: en}
 
   # Faction-related and conflict reporting. These are news feeds, not official faction channels.
-  - {name: Al Jazeera Middle East, category: Palestinian Factions, platform: rss, url: https://www.aljazeera.com/xml/rss/all.xml, language: en}
-  - {name: Times of Israel, category: Palestinian Factions, platform: rss, url: https://www.timesofisrael.com/feed/, language: en}
+  - {name: "Al Jazeera Middle East", category: "Palestinian Factions", platform: rss, url: "https://www.aljazeera.com/xml/rss/all.xml", language: en}
+  - {name: "Times of Israel", category: "Palestinian Factions", platform: rss, url: "https://www.timesofisrael.com/feed/", language: en}
 
   # Media and journalists
-  - {name: Jerusalem Post Headlines, category: Media & Journalists, platform: rss, url: https://www.jpost.com/rss/rssfeedsheadlines.aspx, language: en}
-  - {name: i24NEWS, category: Media & Journalists, platform: rss, url: https://www.i24news.tv/en/rss, language: en}
-  - {name: Haaretz Israel News, category: Media & Journalists, platform: rss, url: https://www.haaretz.com/cmlink/1.5153477, language: en}
-  - {name: Reuters Middle East, category: Media & Journalists, platform: rss, url: https://www.reutersagency.com/feed/?best-topics=middle-east, language: en}
+  - {name: "Jerusalem Post Headlines", category: "Media & Journalists", platform: rss, url: "https://www.jpost.com/rss/rssfeedsheadlines.aspx", language: en}
+  - {name: "i24NEWS", category: "Media & Journalists", platform: rss, url: "https://www.i24news.tv/en/rss", language: en}
+  - {name: "Haaretz Israel News", category: "Media & Journalists", platform: rss, url: "https://www.haaretz.com/cmlink/1.5153477", language: en}
+  - {name: "Reuters Middle East", category: "Media & Journalists", platform: rss, url: "https://www.reutersagency.com/feed/?best-topics=middle-east", language: en}
 
   # Lebanon and regional developments
-  - {name: L'Orient Today, category: Additional Regional, platform: rss, url: https://today.lorientlejour.com/rss/, language: en}
-  - {name: Naharnet, category: Additional Regional, platform: rss, url: https://www.naharnet.com/stories/en/rss, language: en}
-  - {name: Al Jazeera Middle East Regional, category: Additional Regional, platform: rss, url: https://www.aljazeera.com/xml/rss/all.xml, language: en}
+  - {name: "L'Orient Today", category: "Additional Regional", platform: rss, url: "https://today.lorientlejour.com/rss/", language: en}
+  - {name: "Naharnet", category: "Additional Regional", platform: rss, url: "https://www.naharnet.com/stories/en/rss", language: en}
+  - {name: "Al Jazeera Middle East Regional", category: "Additional Regional", platform: rss, url: "https://www.aljazeera.com/xml/rss/all.xml", language: en}
 
   # Add confirmed public RSS mirrors for these X accounts when available:
   # IsraeliPM, Netanyahu, Israel_katz, gantzbe, yairlapid, itamarbengvir,
@@ -44,9 +44,9 @@ sources:
 
   # Add confirmed public Telegram usernames below. Placeholder channels are
   # intentionally omitted so collection does not try to resolve fake entities.
-  # - {name: IDF Telegram, category: Israeli Security, platform: telegram, channel: confirmed_username, language: en}
-  # - {name: COGAT Telegram, category: Israeli Security, platform: telegram, channel: confirmed_username, language: en}
-  # - {name: WAFA Telegram, category: Palestinian Authority, platform: telegram, channel: confirmed_username, language: ar}
-  # - {name: Palestinian PM Telegram, category: Palestinian Authority, platform: telegram, channel: confirmed_username, language: ar}
-  # - {name: Hezbollah, category: Additional Regional, platform: telegram, channel: confirmed_username, language: ar}
-  # - {name: IRGC related channel, category: Additional Regional, platform: telegram, channel: confirmed_username, language: fa}
+  # - {name: "IDF Telegram", category: "Israeli Security", platform: telegram, channel: confirmed_username, language: en}
+  # - {name: "COGAT Telegram", category: "Israeli Security", platform: telegram, channel: confirmed_username, language: en}
+  # - {name: "WAFA Telegram", category: "Palestinian Authority", platform: telegram, channel: confirmed_username, language: ar}
+  # - {name: "Palestinian PM Telegram", category: "Palestinian Authority", platform: telegram, channel: confirmed_username, language: ar}
+  # - {name: Hezbollah, category: "Additional Regional", platform: telegram, channel: confirmed_username, language: ar}
+  # - {name: "IRGC related channel", category: "Additional Regional", platform: telegram, channel: confirmed_username, language: fa}
